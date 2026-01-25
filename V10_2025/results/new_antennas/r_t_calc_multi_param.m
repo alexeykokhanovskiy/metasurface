@@ -11,10 +11,10 @@
 % Arms are 50 nm thick, made of GST, on top of a 200 nm uniform GST film.
 function [R_TE, T_TE] = r_t_calc_multi_param(wl_min, wl_max, n_points, h_cross, Px, Wy, Gst_thickness)
     % clear all; clc;
-    folderToAdd = 'C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\reticolo_allege_v10\';
-    addpath(folderToAdd);
-    folderToAdd = 'C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\results\';
-    addpath(folderToAdd);
+%     folderToAdd = 'C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\reticolo_allege_v10\';
+%     addpath(folderToAdd);
+%     folderToAdd = 'C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\results\';
+%     addpath(folderToAdd);
     h_sio2arr = linspace(0, 0.5, 10);
     for h_sio2 = [0.2]
         %h_sio2arr(2:end)
@@ -37,9 +37,9 @@ function [R_TE, T_TE] = r_t_calc_multi_param(wl_min, wl_max, n_points, h_cross, 
     %    >>> Replace with your real n(λ), k(λ) data <<<
     % =========================
     
-    am_gsst_nk = readmatrix('C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\results\new_antennas\a_gst_frantz_pr.txt');
-    cr_gsst_nk = readmatrix('C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\results\new_antennas\c_gst_frantz_pr.txt');
-    sio2_nk = readmatrix('C:\Users\alexey\YandexDisk\Projects\metasurface_spectral_filters\signal_processing_PCM_metasurfaces\V10_2025\results\new_antennas\malitson_sio2_n.txt');
+    am_gsst_nk = readmatrix('.\V10_2025\results\new_antennas\a_gst_frantz_pr.txt');
+    cr_gsst_nk = readmatrix('.\V10_2025\results\new_antennas\c_gst_frantz_pr.txt');
+    sio2_nk = readmatrix('.\V10_2025\results\new_antennas\malitson_sio2_n.txt');
     
     n_GSTa = interp1(am_gsst_nk(:,1),am_gsst_nk(:,2), lambda);
     k_GSTa = interp1(am_gsst_nk(:,3),am_gsst_nk(:,4), lambda);

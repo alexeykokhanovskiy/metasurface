@@ -28,7 +28,7 @@ N_wl_points = 50
 wl_model = np.linspace(WL_MIN, WL_MAX, N_wl_points)
 EXP_FILE = './LIPPS_sio2_polarized.csv'
 EXP_COL = 6
-path = 'C:/Users/alexey/YandexDisk/Projects/metasurface_spectral_filters/signal_processing_PCM_metasurfaces/V10_2025/results/new_antennas/'
+path = './V10_2025' # path to the folder with solver functions
 
 # Generate unique filename with timestamp
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -88,7 +88,7 @@ print(f"Experimental data loaded: {len(wl_exp)} wavelength points")
 print("\nЗапуск MATLAB engine...")
 eng = matlab.engine.start_matlab()
 eng.addpath(eng.pwd(), nargout=0)
-eng.addpath(path, nargout=0)
+eng.addpath(eng.genpath(path), nargout=0)
 print("MATLAB engine started successfully")
 
 # ===============================
