@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data and Results
+*.h5
+optimization_results*/
+*_comparisons_*/
+*_spectra_*/
+
+# Archives
+*.zip
+*.7z
+*.tar.gz
+*.rar
+
+# Large documents (uncomment if needed)
+# *.docx
+# *.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
