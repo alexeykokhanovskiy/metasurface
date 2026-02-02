@@ -26,6 +26,7 @@ env/
 optimization_results*/
 *_comparisons_*/
 *_spectra_*/
+qd_spectrums/
 
 # Archives
 *.zip
