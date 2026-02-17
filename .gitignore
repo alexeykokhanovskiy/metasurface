@@ -27,7 +27,7 @@ optimization_results*/
 *_comparisons_*/
 *_spectra_*/
 qd_spectrums/
-
+spatialIsing/data\MNIST\raw
 # Archives
 *.zip
 *.7z
