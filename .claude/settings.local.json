@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(python:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(mkdir -p \"c:/Users/a.kokhanovskiy/YandexDisk/Projects/metasurface_spectral_filters/signal_processing_PCM_metasurfaces/indian_pines/data/raw\")",
+      "Bash(mkdir -p \"c:/Users/a.kokhanovskiy/YandexDisk/Projects/metasurface_spectral_filters/signal_processing_PCM_metasurfaces/indian_pines/data/processed\")",
+      "Bash(mkdir -p \"c:/Users/a.kokhanovskiy/YandexDisk/Projects/metasurface_spectral_filters/signal_processing_PCM_metasurfaces/indian_pines/src\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:meent.readthedocs.io)"
     ]
   }
 }

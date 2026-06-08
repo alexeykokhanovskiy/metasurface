@@ -28,6 +28,13 @@ optimization_results*/
 *_spectra_*/
 qd_spectrums/
 
+# Large raw data files
+indian_pines/data/raw/Indian_pines_corrected.mat
+qd_regression/final_cleaned_data.csv
+
+# Training artifacts
+catboost_info/
+
 # Archives
 *.zip
 *.7z
@@ -45,3 +52,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Reticolo eigenmode cache
+indian_pines/src/cache/
+ret*.mat

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python -c \"import sklearn; print\\(sklearn.__version__, sklearn.__file__\\)\")",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\alexey\\\\YandexDisk\\\\Projects\\\\metasurface_spectral_filters\\\\signal_processing_PCM_metasurfaces\\\\spatialIsing\" -Recurse)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(ConvertTo-Csv -NoTypeInformation)",
+      "Bash(Select-Object -Skip 1)",
+      "Bash(.venv/Scripts/python.exe -c \"import numpy, scipy, sklearn, matplotlib; print\\(''numpy'', numpy.__version__\\); print\\(''scipy'', scipy.__version__\\); print\\(''sklearn'', sklearn.__version__\\)\")",
+      "Bash(.venv\\\\Scripts\\\\python.exe -c \"import meent; print\\(meent.__version__\\); import inspect, meent; print\\(inspect.getfile\\(meent\\)\\)\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\alexey\\YandexDisk\\Projects\\metasurface_spectral_filters\\signal_processing_PCM_metasurfaces\\indian_pines\\src"
+    ]
+  }
+}
